@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--HEAD-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Krystle Tsuda</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    </head>
+    
+    <!--BODY-->
+    <body>
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!--END OF NAVBAR-->
+        <br>
+        <br>
+        <!--BACKGROUND VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="glitch_video">
+                <source src="images/video/glitch_3.mp4" type="video/mp4">
+               <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1>.kxxy:kodez</h1>
+            <h2>[kit-ee:kohds]</h2>
+            <h3>Developer of software.
+            <br>Designer of webs.
+            <br>Welcome to my world.</h3>
+        </div>
+        <!--END OF BACKGROUND VIDEO-->
+        
+        <!--ABOUT SECTION-->
+        <div class="row" id="about">
+            <!--LEFT COLUMN-->
+            <div class="column_2 column_short">
+                <div class="container">
+                    <!--Plays video on hover-->
+                    <p class="overlay">WHO IS SHE?</p>
+                    <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_main">
+                        <source src="images/video/about2.0.mp4" type="video/mp4" class="main"></source>
+                        <!--Display message if video fails to run-->
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_1 column_short">
+                <h4 class="center">.kxxy:kodez</h4>
+                <p class="main">
+                
+                Hi, I'm a developer with a knack for koding
+                and an eye for design. Creating my own .class 
+                since '92. 
+                <br><br>
+                Now available for you. Share your ideas and 
+                lets build your next project.
+                </p>
+            </div>
+        </div>
+        <!--END OF ABOUT SECTION-->
+
+        <!--GITHUB SECTION-->
+        <div class="row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column_2 column_tall">
+                <h4 class="center">The Source</h4>
+                <a href="https://github.com/krys-tsuda"><img class="image_main" src="images/github-mark/github-mark/github-mark-white.png" alt=""></a>
+            </div>
+
+            <!--RIGHT COLUMN-->
+            <div class="column_1 column_tall">
+                <h4 class="center">Explore my world.</h4>
+                <div class="container">
+                    <!--Plays video on hover-->
+                    <p class="overlay">HELLO!</p>
+                    <video loop onmouseover="this.play()" onmouseout="this.pause();" class="video_main">
+                        <source src="images/video/welcome2.0.mp4" type="video/mp4"></source>
+                        <!--Display message if video fails to run-->
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!--END OF GITHUB SECTION-->
+
+        <!--CONTACT SECTION-->
+        <div class="row" id="contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="column_2">
+                <h4 class="center">Kontakt</h4>
+                 <div class="container"> 
+                    <!--Plays video on hover-->
+                    <p class="overlay">GOT IDEAS?</p>
+                    <video onmouseover="this.play()" onmouseout="this.pause();" class="video_main">
+                        <source src="images/video/contact.mp4" type="video/mp4"></source>
+                        <!--Display message if video fails to run-->
+                        Your browser does not support HTML5 video.
+                    </video>   
+                </div>
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="column_1">
+                <h4 class="center">Kat Kallz</h4>
+                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK-->
+                <form action="https://formspree.io/f/xyyqyole" method="post"><!--HERE WE ARE UTILIZING A 3RD PARTY SERVIVCE TO SUBMIT THE CONTACT FORM DATA, INSERT YOUR FORMSPREE ENDPOINT IN THE ACTION ATTRIBUTE-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="What's your name?">
+                    <label>Email:</label>
+                        <input type="text" id="email" name="email" placeholder="What's your email?">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="What's the word?">
+                        <input type="submit" value="SEND MEOW">
+                </form>
+            </div>
+        </div>
+        <!--END OF CONTACT-->
+
+        <!--FOOTER-->
+        <footer>
+            <p class="right">
+            <a href="https://github.com/krys-tsuda"><img class="icon" src="images/icon/github/icons8-github-32.png"></a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/krystle-tsuda-b3347a278/"><img class="icon" src="images/icon/linkedin/icons8-linkedin-32.png"></a>
+            &nbsp;
+            .kxxy:kodez &copy; 2023 
+            </p>        
+        </footer>
+        <!--END OF FOOTER-->
+    </body>
+</html>

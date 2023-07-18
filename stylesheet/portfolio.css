@@ -1,0 +1,354 @@
+/****GENERAL STYLING****/
+/*BODY*/
+body {
+    margin: 0%; /*site displays to the edge of screen*/
+}
+
+/*HEADING 1 ELEMENTS*/
+h1 {
+    font-family: 'Tektur', Impact;
+    font-size: 5em;
+    margin-left: 20%;
+}  
+
+/*HEADING 2 ELEMENTS*/
+h2 {
+    font-family: 'Tektur', Impact;
+    font-size: 3em;
+    margin-left: 20%;
+}
+
+/*HEADING 3 ELEMENTS*/
+h3 {
+    font-family: 'Courier New', courier, monospace;
+    font-size: 2em;
+    margin-left: 20%;
+}
+
+/*HEADING 4 ELEMENT*/
+h4 {
+    font-family: 'Tektur', Impact;
+    font-size: 2em;
+    color: white;
+}
+
+/*HEADING 1 2 AND 3 ELEMENT HOVER EFFECT*/
+h1:hover, h2:hover, h3:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/*PARAGRAPH ELEMENTS*/
+p {
+    color: white;
+    font-family: 'Courier New', courier, monospace;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*PARAGRAPH ELEMENT HOVER EFFECT*/
+.main:hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*CENTER CLASS*/
+.center {
+    text-align: center;
+}
+
+/*RIGHT CLASS*/
+.right {
+    text-align: right;
+}
+/*CENTER CLASS HOVER EFFECT*/
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/*ANCHOR ELEMENTS*/
+a {
+    color: #9900ff;
+}
+
+/*IMAGE ELEMENTS*/
+.image_main {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/*IMAGE ELEMENT HOVER EFFECTS*/
+.image_main:hover {
+    filter: drop-shadow(5px 10px 5px #ff00cc);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*ICON HOVER EFFECT*/
+.icon:hover {
+    filter: drop-shadow(3px 3px #ff00cc);
+}
+
+/*THE @MEDIA RULE*/
+@media screen and (max-width: 576px) {
+    .image_main {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/*STYLING FOR FOOTER ELEMENT*/
+footer {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 18px;
+}
+
+/****END OF GENERAL STYLING****/
+
+
+/****NAVBAR STYLING****/
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5x;
+    animation: moveNav 5s;
+}
+
+/*MOVENAV ANIMATION EFFECT*/
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/*NAVBAR LINKS*/
+.navbar a {
+    float: left;
+    display: block;
+    color: #00f7ff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+/*MOVE NAV TEXT ANIMATION EFFECT FOR MOVING THE NAVBAR TEXT FROM ABOVE THE VIEW TO THE NAVBAR*/
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/*SCREENS 576PX AND SMALLER WILL DISPLAY NAVBAR LINKS EQUALLY DISTRIBUTED*/
+@media screen and (max-width: 576px) {
+    .navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+/*NAVBAR HOVER EFFECTS*/
+.navbar a:hover {
+    color: #ff00cc;
+    font-weight: bold;
+}
+
+/*NAVBAR HOME BUTTON*/
+.navbar a.active {
+    border: solid 1px;
+    border-color: #00f7ff;
+    color: #ff00cc;
+}
+
+/*NAVBAR HOME BUTTON HOVER EFFECT*/
+.navbar a.active:hover {
+    border: solid 1px;
+    border-color: #ff00cc;
+    color: #00f7ff;
+    font-weight: bold;
+}
+
+/****END OF NAVBAR STYLING****/
+
+/****VIDEO STYLING****/
+/*FORMATTING FOR BACKGROUND VIDEO*/
+#glitch_video {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/*SCREENS THAT ARE 576PX AND SMALLER WILL NOT DISPLAY THE BACKGROUND VIDEO*/
+@media screen and (max-width: 576px) {
+    #glitch_video {
+        display: none;
+    }
+}
+
+/*TEXTS OVER THE VIDEO*/
+.Video_Text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+/*THIS ANIMATION EFFECT CAUSES THE OVERLAY VIDEO TEXT TO MOVE UP FROM THE BOTTOM OF THE PAGE UPON PAGE LOAD*/
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/*FORMATTING MAIN VIDEOS*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    border: solid 1px #00f7ff;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: ;
+    font-style: 'Tektur', monospace;
+    position: absolute;
+    z-index: 2;
+}
+
+.video_main {
+    filter: grayscale(75%);
+    max-width: 100%;
+    max-height: 350px;
+    border: solid 1px #ff00cc;
+    position: relative;
+   
+  }
+
+.video_main:hover {
+    filter: grayscale(0%);
+    box-shadow: 10px 5px 5px #00f7ff;
+    z-index: 3;
+}
+
+/****END OF VIDEO STYLING****/
+
+/****TABLE STYLING****/
+* {
+    box-sizing: border-box;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 0 2% 2% 2%;
+    height: 500px;
+    background-color: black;
+}
+
+/*SCREENS 576 AND SMALLER WILL DISPLAY A SCROLL BAR IF THE TEXT OVERFLOWS THE COLUMN HEIGHT*/
+@media screen and (max-width: 576px) {
+    .column_1 {
+        overflow: auto;
+    }
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 0 2% 2% 2%;
+    height: 500px;
+    background-color: black;
+}
+
+/*THIS CLASS IS APPLIED TO COLUMNS IN THE FIRST ROW*/
+.column_short{
+    padding: 2% 2% 2% 2%;
+    height: 450px;
+}
+
+/*THIS CLASS IS APPLIED TO THE COLUMNS IN THE FINAL ROW, OVERRIDING THE HEIGHT AND PASSING TO PROVIDE MORE ROOM FOR THE CONTACT FORM WHILE KEEPING THE REST OF THE FORMATTING FROM COLUMN_1 OR COLUMN_2*/
+.column_tall {
+    padding: 0 2% 2% 2%;
+    height: 550px;
+}
+
+/*THIS INSERTS SOMETHING AFTER THE CONTENT OF SELECTED ELEMENTS (IN THIS CASE THE ELEMENTS WITH THE CLASS "ROW")*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/****END OF TABLE STYLING****/
+
+/****CONTACT FORM STYLING****/
+input[type=text] {
+    width: 95%;
+    height: 95%;
+    padding: 12px;
+    background-color: black;
+    border: 1px solid #00f7ff;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Courier New', courier, monospace;
+    color: white;
+}
+
+/*HOVER EFFECTS FOR INPUT BOXES*/
+input[type=text]:hover {
+    box-shadow: 10px 5px 5px #ff00cc;
+}
+
+/*SUBMIT BUTTON*/
+input[type=submit] {
+    background-color: black;
+    color: #ff00cc;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: solid 1px #00f7ff;
+    cursor: pointer;
+    display: block;
+    margin: 3%;
+    font-family: 'Courier New', courier, monospace;
+}
+
+/*HOVER EFFECT FOR SUBMIT BUTTON*/
+input[type=submit]:hover {
+    color: #00f7ff;
+    border: solid 1px;
+    border-color: #ff00cc;
+    box-shadow: 10px 5px 5px #00f7ff;
+}
+
+/*FORM ELEMENT*/
+form {
+    background-color: black;
+    padding-left: 3%;
+    font-family: 'Courier New', courier, monospace;
+    color: #ff00cc
+}
+
+/**** END OF CONTACT FORM STYLING****/
