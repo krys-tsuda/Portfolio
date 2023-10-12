@@ -3,6 +3,9 @@
     
     <!--HEAD-->
     <head>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Krystle Tsuda</title>
@@ -70,16 +73,21 @@
                     <div id="slideshow_container">
                         <!--Slide 1 of 6 -->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <img src="images/img_1.jpg" class="image_main">
+                            <div class="text">Who is She?</div>
+                        </div>
+                        <!--Slide 1 of 6 -->
+                        <div class="mySlides fade">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/about.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
                             </video>
-                            <div class="text">Who is She?</div>
+                            <div class="text">.kxxy:kodez</div>
                         </div>
                         <!--Slide 2 of 6-->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/lang.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
@@ -88,7 +96,7 @@
                         </div>
                         <!--Slide 3 of 6 -->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/python.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
@@ -97,7 +105,7 @@
                         </div>
                         <!--Slide 4 of 6 -->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/microsoft.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
@@ -106,7 +114,7 @@
                         </div>
                         <!--Slide 5 of 6-->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/sql.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
@@ -115,7 +123,7 @@
                         </div>
                         <!--Slide 6 of 6-->
                         <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play()" onmouseout="this.pause();" class="video_show">
+                            <video preload loop onmouseover="this.play();" class="video_show">
                                 <source src="images/video/katkall.mp4" type="video/mp4" class="main"></source>
                                 <!--Display message if video fails to run-->
                                 Your browser does not support HTML5 video.
@@ -151,7 +159,7 @@
                 <div class="media_container">
                     <!--Plays video on hover-->
                     <p class="overlay">HELLO!</p>
-                    <video loop onmouseover="this.play()" onmouseout="this.pause();" class="video_main">
+                    <video preload loop onmouseover="this.play()"  class="video_main">
                         <source src="images/video/gitwelcome.mp4" type="video/mp4"></source>
                         <!--Display message if video fails to run-->
                         Your browser does not support HTML5 video.
@@ -178,7 +186,7 @@
                 <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK-->
                 <form action="https://formspree.io/f/xyyqyole" method="POST" class="form_container">
                     <h1>Kontact</h1>
-                    <p>G</p>
+                    <p>Got ideas? Lets connect!</p>
                     <label>Name:</label>
                     <input type="text" placeholder="What's your name?" name="name" required>
                     <label>Email:</label>
