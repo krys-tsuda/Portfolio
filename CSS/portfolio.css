@@ -50,6 +50,16 @@ h4 {
     color: white;
 }
 
+h5 {
+    font-family: 'Tektur', Impact;
+    color: #00ff2a;
+}
+
+h6 {
+    color: #9900ff;
+    font-size: 2vw;
+}
+
 /*HEADING 1 2 AND 3 ELEMENT HOVER EFFECT*/
 h1:hover, h2:hover, h3:hover {
     filter: grayscale(5%);
@@ -66,6 +76,10 @@ p {
     font-size: 2.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+}
+
+#textContainer {
+    color: white;
 }
 
 /*CENTER CLASS*/
@@ -89,70 +103,62 @@ a {
     color: #9900ff;
 }
 
+/*HEADSHOT*/
+#pic {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 20%;
+    --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+
+    aspect-ratio: 1;
+    border-radius: 20px;
+    transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+    -webkit-mask: 
+      linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+      100% 100%/250% 250%;
+    transition: .4s;
+    cursor: pointer;
+  }
+  .alt {
+    --r: 1,1;
+    -webkit-mask: 
+      linear-gradient(45deg,#000c 40%,#000,#000c 60%)
+      0 100%/250% 250%;
+  }
+  #pic:hover {
+    --i: -1;
+    -webkit-mask-position: 0 0;
+  }
+  .alt:hover {
+    -webkit-mask-position: 100% 0;
+  }
+  
 /*IMAGE ELEMENTS*/
 .image_main {
     display: block;
-    width: 75%;
+    width: 50%;
     height: auto;
+    padding-top: 2%;
     margin: auto;
 }
 
 /*IMAGE ELEMENT HOVER EFFECTS*/
 .image_main:hover {
-    filter: drop-shadow(5px 10px 5px #ff00cc);
+    filter: drop-shadow(5px 10px 5px #6318d6);
     transition: transform 1s;
     transform: scale(1.1);
 }
 
-/*MAIN BODY VIDEO STYLING*/
-.media_container {
-    width: 39.5vw;
-    height: auto;
-    max-height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
- }
- 
- .video_main {
-     filter: grayscale(75%);
-     vertical-align: middle;
-     height: auto;
-     width: 100%;
-     border: solid 1px #ff00cc;
-     cursor: pointer;
-   }
- 
-  .overlay {
-     border: solid 1px #00f7ff;
-     background-color: black;
-     color: white;
-     font-size: 30px;
-     font-style: 'Tektur', monospace;
-     position: absolute;
-     z-index: 2;
-     margin: auto auto auto auto;
- }
- 
- .video_main:hover {
-     filter: grayscale(0%);
-     box-shadow: 10px 5px 5px #00f7ff;
-     z-index: 3;
-     cursor: pointer;
- }
- 
- /*END OF MAIN BODY VIDEO STYLING*/
-
 /*ICON HOVER EFFECT*/
 .icon:hover {
-    filter: drop-shadow(3px 3px #ff00cc);
+    filter: drop-shadow(3px 3px #00ff2a);
 }
 
 /*STYLING FOR FOOTER ELEMENT*/
 footer {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2%;
     font-size: 1.5vw;
 }
@@ -160,7 +166,7 @@ footer {
 /*FOOTER TEXT HOVER*/
 .foot:hover {
     font-weight: bold;
-    color: #00f7ff;
+    color: #00ff2a;
 }
 
 /****END OF GENERAL STYLING****/
@@ -187,7 +193,7 @@ footer {
 .navbar a {
     float: left;
     display: block;
-    color: #00f7ff;
+    color: #6318d6;
     padding: .75vw 1vw;
     text-decoration: none;
     font-family: 'Courier New', courier, monospace;
@@ -206,7 +212,7 @@ footer {
 
 /*NAVBAR HOVER EFFECTS*/
 .navbar a:hover {
-    color: #ff00cc;
+    color: #00ff2a;
     font-weight: bold;
     cursor: pointer;
 }
@@ -214,15 +220,14 @@ footer {
 /*NAVBAR HOME BUTTON*/
 .navbar a.active {
     background-color: black;
-    border: 1px solid #00f7ff;
-    color: #ff00cc;
+    border: 1px solid #00ff2a
 }
 
 /*NAVBAR HOME BUTTON HOVER EFFECT*/
 .navbar a.active:hover {
     background-color: black;
-    border: 1px solid #ff00cc;
-    color: #00f7ff;
+    border: 1px solid #6318d6;
+    color: #00ff2a;
     font-weight: bold;
 }
 
@@ -263,119 +268,53 @@ footer {
     to {top: 0vw;}
 }
 
-/****SLIDESHOW STYLING****/
-#slideshow_background {
-    background: black;
+
+/* Glowing Button Styling */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.mySlides {
-    display: none; /*hides slides until function for slideshow is called*/
-}
-
-/*SLIDESHOW SECTION / CONTAINER*/
-#slideshow_container {
-    width: 39.5vw;
-    height: auto;
-    padding-top: 4%;
+.button-column {
     position: relative;
-    margin: auto;
-}
-
-/*Removes the previous and next buttons underline*/
-#slideshow_container a {
-    text-decoration: none;
-}
-
-/*SLIDESHOW VIDEOS*/
-.video_show {
-    filter: grayscale(75%);
-    vertical-align: middle;
-    height: auto;
-    width: 100%;
-    border: 2px solid #ff00cc;
-}
-
-.video_show:hover {
-     filter: grayscale(0%);
-     box-shadow: 10px 5px 5px #00f7ff;
-     z-index: 3;
-     cursor: pointer;
-    }
-
-/*NEXT AND PREVIOUS BUTTONS*/
-.previous, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 2vw;
-    color: #00f7ff;
-    font-weight: bold;
-    font-size: 1.5vw;
-    user-select: none;
-    transition: 0.6s ease;
-}
-
-/*NEXT BUTTON POSITION TO RIGHT*/
-.next {
-    right: 0;
-}
-
-/*NEXT PREVIOUS HOVER EFFECTS*/
-.previous:hover, .next:hover {
-    color: #ff00cc
-}
-
-/*SLIDESHOW TEXT*/
-.text {
-    color: white;
-    padding: 1vw;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     text-align: center;
-    font-family: 'Courier New', courier, monospace;
-    letter-spacing: .1vw;
-    font-size: 1.5vw;
-    background-color: rgba(0,0,0,0.75);
 }
 
-/*DOTS*/
-.dot {
-    cursor: pointer;
-    height: 1vw;
-    width: 1vw;
-    margin: .25vw;
-    background-color: #00f7ff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    z-index: 1;
+.label-container {
+    display: none;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
 }
 
-/*DOTS HOVER EFFECT*/
-.active, .dot:hover {
-    background-color: #ff00cc;
+.glow {
+    width: 100%;
+    padding: 15px 15px;
+    color: #7303f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s all ease-in;
+    letter-spacing: 4px;
+    overflow: hidden;
+    border: 2px solid #7303f4;
+    position: relative;
 }
 
-/*SLIDESHOW FADE ANIMATION*/
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+.glow:hover {
+    background: #7303f4;
+    color: #050801;
+    box-shadow: 0 0 5px #7303f4,
+                0 0 25px #7303f4,
+                0 0 50px #7303f4,
+                0 0 200px #7303f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-
-@-webkit-keyframes fade {
-    from {opacity: .4;}
-    to {opacity: 1;}
-}
-
-@keyframes fade {
-    from {opacity: .4;}
-    to {opacity: 1;}
-}
-/****END OF SLIDESHOW STYLING****/
 
 /****TABLE STYLING****/
 * {
@@ -389,8 +328,8 @@ footer {
 
 .column_1, .column_2 {
     width: 50%;
-    padding: 0 2% 2% 2%;
-    background-color: black;
+    padding: 0 2% 5% 2%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*SCREENS 576 AND SMALLER WILL DISPLAY A SCROLL BAR IF THE TEXT OVERFLOWS THE COLUMN HEIGHT*/
@@ -402,7 +341,7 @@ footer {
 
 
 #about .column_1, #github .column_2 {
-    background-color: #010325;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /*THIS INSERTS SOMETHING AFTER THE CONTENT OF SELECTED ELEMENTS (IN THIS CASE THE ELEMENTS WITH THE CLASS "ROW")*/
 .container:after {
@@ -420,15 +359,15 @@ footer {
     bottom: 1.75vw; /* Positions the button slightly up from the bottom of the viewport */
     right: 1.75vw;
     width: 25vw;
-    color: #ff00cc;
-    border: 2px solid #00f7ff;
+    color: #6318d6;
+    border: 2px solid #00ff2a;
     -webkit-animation: movePopup 5s;
     animation: movePopup5s;
 }
 
 .popButton:hover {
-    color: #00f7ff;
-    border: 2px solid #ff00cc;
+    color: #00ff2a;
+    border: 2px solid #6318d6;
 }
 
 /*MOVES POP BUTTON OFF THE RIGHT SIDE TO FIXED POSITION*/
@@ -456,7 +395,7 @@ footer {
     padding: 1vw;
     background-color: black;
     font-family: 'Courier New', courier, monospace;
-    color: #ff00cc;
+    color: #6318d6;
 }
 
 .form_container input[type=text] {
@@ -464,21 +403,21 @@ footer {
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
     background-color: black;
-    border: 1px solid #00f7ff;
+    border: 1px solid #00ff2a;
     color: white;
     font-size: 1.5vw;
 }
 
 /*HOVER EFFECTS FOR INPUT BOXES*/
 input[type=text]:hover {
-    box-shadow: 10px 5px 5px #ff00cc;
+    box-shadow: 10px 5px 5px #6318d6;
 }
 
 /*SUBMIT BUTTON*/
 button {
     background-color: black;
-    color: #00f7ff;
-    border: solid 1px #00f7ff;
+    color: #00ff2a;
+    border: solid 1px #00ff2a;
     font-family: 'New Courier', courier, monospace;
     letter-spacing: .3vw;
     font-size: 2vw;
@@ -494,7 +433,7 @@ button {
 
 /*CLOSE BUTTON*/
 .close {
-    background-color: #00f7ff;
+    background-color: #00ff2a;
     color: black;
     border: none;
 }
@@ -502,13 +441,13 @@ button {
 /*HOVER EFFECT FOR BUTTONS*/
 .close:hover {
     background-color: black;
-    border: 2px solid #00f7ff;
-    color: #00f7ff;
+    border: 2px solid #00ff2a;
+    color: #00ff2a;
 }
 
 button:hover {
-    border: 2px solid #00f7ff;
-    color: #ff00cc;
+    border: 2px solid #00ff2a;
+    color: #6318d6;
 }
 
 /****END OF CONTACT FORM STYLING****/

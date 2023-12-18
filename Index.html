@@ -33,7 +33,7 @@
         <!--BACKGROUND VIDEO-->
         <div id="home">
             <video autoplay muted loop id="glitch_video">
-                <source src="images/video/glitch.mp4" type="video/mp4">
+                <source src="images/video/liquid.mp4" type="video/mp4">
                <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
                 Your browser does not support HTML5 video.
             </video>
@@ -45,134 +45,96 @@
             <h2>[kit-ee:kohds]</h2>
             <h3>Developer of software.
             <br>Designer of webs.
-            <br>Welcome to my world.</h3>
+            <br>Welcome to the disk-O.</h3>
         </div>
         <!--END OF BACKGROUND VIDEO-->
         
         <!--ABOUT SECTION-->
         <div class="container" id="about">
 
-            <!--RIGHT COLUMN-->
+            <!--LEFT COLUMN-->
             <div class="column_1">
                 <h4 class="center">.kxxy:kodez</h4>
-                <p class="main">
-                
-                Hi, I'm a developer with a knack for koding
-                and an eye for design. Creating my own .class 
-                since '92. 
-                <br><br>
-                Now available for you. Share your ideas and 
-                lets build your next project.
-                </p>
+                <div class="main">   
+                    <h5>Who is she?</h5>        
+                    <p>Hi I'm Krystle, a full-stack developer with a 
+                    knack for koding and an eye for design. Creating 
+                    my own .class since '92. 
+                    <br><br>
+                    I was slinging drinks behind the bar. Now I'm 
+                    serving up programs and pages. The world is 
+                    my disk-O, let's dance.
+                    </p>
+                </div>
             </div>
             
-            <!--LEFT COLUMN-->
+            <!--RIGHT COLUMN-->
             <div class="column_2">
-                <!--SLIDESHOW-->
-                <div id="slideshow">
-                    <div id="slideshow_container">
-                        <!--Slide 1 of 6 -->
-                        <div class="mySlides fade">
-                            <img src="images/img_1.jpg" class="image_main">
-                            <div class="text">Who is She?</div>
-                        </div>
-                        <!--Slide 1 of 6 -->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/about.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">.kxxy:kodez</div>
-                        </div>
-                        <!--Slide 2 of 6-->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/lang.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">Full-stack developer trained in: HTML, CSS, Javascript</div>
-                        </div>
-                        <!--Slide 3 of 6 -->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/python.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">popular programming language Python</div>
-                        </div>
-                        <!--Slide 4 of 6 -->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/microsoft.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-                        </div>
-                        <!--Slide 5 of 6-->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/sql.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">back end development, databases and SQL.</div>
-                        </div>
-                        <!--Slide 6 of 6-->
-                        <div class="mySlides fade">
-                            <video preload loop onmouseover="this.play();" class="video_show">
-                                <source src="images/video/katkall.mp4" type="video/mp4" class="main"></source>
-                                <!--Display message if video fails to run-->
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="text">Got ideas?</div>
-                        </div>
-                        <!--PREVIOUS AND NEXT BUTTONS-->
-                        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-                    <!--SLIDESHOW DOTS-->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
-                    </div>
-                
+                <!--Image-->
+                <div class="img_container">
+                    <img id="pic" src="images/img_1.jpg" alt="HeadShot">
                 </div>
+                <h5 class="center">Developer. Designer. Dogmom.</h4>
             </div> 
         </div>
         <!--END OF ABOUT SECTION-->
 
+      
+        <!-- SKILLS -->
+        <div class="button-container">
+            <div class="button-wrapper">
+                <div class="label-container" id="htmlLabel"><label>HTML - CSS - JS</label></div>
+                <button class="glow" id="htmlButton">WEB DESIGN</button>
+            </div>
+    
+            <div class="button-wrapper">
+                <div class="label-container" id="dbLabel"><label>DataBase - SQL</label></div>
+                <button class="glow" id="dbButton">BACK END</button>
+            </div>
+    
+            <div class="button-wrapper">
+                <div class="label-container" id="pythonLabel"><label>Python Programming</label></div>
+                <button class="glow" id="pythonButton">PYTHON</button>
+            </div>
+    
+            <div class="button-wrapper">
+                <div class="label-container" id="csharpLabel"><label>C# - MVC</label></div>
+                <button class="glow" id="csharpButton">MICROSOFT</button>
+            </div>
+    
+            <div class="button-wrapper">
+                <div class="label-container" id="dotNetLabel"><label>.NET - ASP.NET</label></div>
+                <button class="glow" id="dotNetButton">FRAMEWORK</button>
+            </div>
+        </div>
+    
+
+
         <!--GITHUB SECTION-->
         
         <div class="container"" id="github">
-            <!--RIGHT COLUMN-->
-            <div class="column_1">
-                <h4 class="center">Explore my world.</h4>
-                <div class="media_container">
-                    <!--Plays video on hover-->
-                    <p class="overlay">HELLO!</p>
-                    <video preload loop onmouseover="this.play()"  class="video_main">
-                        <source src="images/video/gitwelcome.mp4" type="video/mp4"></source>
-                        <!--Display message if video fails to run-->
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
-            </div>
-       
-            
             <!--LEFT COLUMN-->
-             <div class="column_2">
-                <h4 class="center">The Source</h4>
+            <div class="column_2">
+                <h4 class="center">disk-O kxxy</h4>
                 <div class="media_container">
                     <a href="https://github.com/krys-tsuda"><img class="image_main" src="images/github.png" alt=""></a>
+                </div>
+            </div>
+
+            <!--RIGHT COLUMN-->
+            <div class="column_1">
+                <h4 class="center">Makin Moves</h4>
+                <div class="main">              
+                    <h5>Designer</h5>
+                    <p>As a multimedia artist, I have passion
+                    for 'aesthetic' and image. Ideas should be
+                    more than seen, they should be felt.
+                    I'm interested in turning brands into identites.</p>
+                    <br>
+                    <h5>Developer</h5>
+                    <p>My focus is on project efficiency and performance. 
+                    I utilize my skills and selfteaching to maintain
+                    solutions and stay current for optimization.</p>
                 </div>
             </div>
         </div>
