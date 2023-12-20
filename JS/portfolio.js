@@ -8,18 +8,34 @@ function closeForm() {
 }
 
 
-//creates the contact form when user clicks off item
-//add evenetlistener for 'clicks'
-document.addEventListener("click", function(event) {
-    //if click happens on cancel button or anywhere not contact form
-    //or elements with contact class
-    if (event.target.matches(".cancel") || !event.target.closest(".popForm") && !event.target.closest(".popButton") && !event.target.closest("#contact")) {
-        closeForm()
+// Open and close popform
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+// creates the contact form when the user clicks off item
+// add eventlistener for 'clicks'
+document.addEventListener("click", function (event) {
+    // if click happens on cancel button or anywhere not contact form
+    // or elements with contact class
+    if (
+        event.target.matches(".cancel") ||
+        !event.target.closest(".popForm") &&
+        !event.target.closest(".popButton") &&
+        !event.target.closest("#contact")
+    ) {
+        closeForm();
     }
-}, false )
+}, false);
+
 
 
 // function to display labels on hover
+
 function toggleLabelOnHover(buttonId, labelId) {
     var button = document.getElementById(buttonId);
     var label = document.getElementById(labelId);
