@@ -1,183 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>KrysTsuda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style-main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+</head>
+<!-- Body -->
+<body>
     
-    <!--HEAD-->
-    <head>
-        <meta
-            http-equiv="Content-Security-Policy"
-            content="upgrade-insecure-requests" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>KrystleTsuda</title>
-        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
-        <link rel="stylesheet" href="/styles/main.css" />
-        <!--FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-    </head>
-    
-    <!--BODY-->
-    <body class="background">
-        <!--NAVBAR-->
-        <div class="navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#github">GitHub</a>
-            <!--onclick popup form ondblclick close popup form-->
-            <a onclick="openForm()" ondblclick="closeForm()"id="contact">Kontact</a>
-        </div>
-        <!--END OF NAVBAR-->
-        <br>
-        <br>
-        <!--BACKGROUND VIDEO-->
-        <div id="home">
-            <video autoplay muted loop id="bg_video">
-                <source src="images/video/liquid.mp4" type="video/mp4">
-               <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-
-        <!--VIDEO TEXT-->
-        <div class="home_text">
-            <h1>Disk-O<span style="color: #00ff2a">kt</span></h1>>
-            <h2>Developer of software.
-            <br>Designer of webs.
-            <br>Daemon in waiting.</h2>
-            <br>
-            <h3>Welcome to the disk-O.</h3>
-        </div>
-        <!--END OF BACKGROUND VIDEO-->
-       
-        <!--ABOUT SECTION-->
-        <div class="container" id="about">
-            <!--LEFT COLUMN-->
-            <div class="column_1">
-                <h4 class="right">.kxxy:kodez</h4>
-                <div class="main">   
-                    <h5>Who is she?</h5>        
-                    <p>Hi I'm Krystle, a full-stack developer with a 
-                    knack for koding and an eye for design. Creating 
-                    my own .class since '92. 
-                    <br><br>
-                    I used to sling drinks behind a bar, now I serve 
-                    pages and programs. Eager to apply my skills in 
-                    other avenues, saving all progres to the disk-O,
+    <div class="turn-on" id="main-content">
+            <!--Navbar-->
+            <div id="main">
+                <navbar>
+                    <a class="active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#github">Projects</a>
+                    <a href="https://docs.google.com/document/d/1TGOIxkz1vgCISpTy6xXrPamRW_Ug41dOAian9N8zbKM/edit?usp=sharing" target="_blank">Resume</a>
+                    <!--onclick popup form ondblclick close popup form-->
+                    <a onclick="openForm()" ondblclick="closeForm()"id="contact">Kontact</a>
+                    <a href="https://github.com/krys-tsuda" class="right"><img class="icon" src="images/icon/icon-github.png"></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/krystle-tsuda-b3347a278/" class="right"><img class="icon" src="images/icon/icon-linkdin.png"></a>
+                </navbar>
+                <br>
+                <br>
+                <!--BackgroundVideo-->
+                <div id="home">
+                    <video autoplay muted loop id="bg-vid">
+                        <source src="images/bg-vid.mp4" type="video/mp4">
+                        <!--Display message if video fails to run-->
+                        Your browser does not support HTML5 video.
+                    </video>
                 </div>
-            </div>
-            <!--RIGHT COLUMN-->
-            <div class="column_2">
-                <h4><span style="color: #6318d6";>[kit-ee:kohds]</h4>
-                <!--Image-->  
-                <img id="pic" src="images/img_1.jpg" alt="HeadShot">
-                <h5 class="center">{Developer} {Designer} {Dogmom}</h5>  
-            </div>
-        </div>
-        <!--END OF ABOUT SECTION-->
-
-        <!--TECHSTACK-->
-        <div class="container" id="tech">
-            <div class="tech-container">
-                <h4 class="center">Tech(no) Stack</h4>
-                <div class="tech">
-                    <div>
-                        <p>HTML</p>
-                        <img class="tech-img" src="images/icon/html.png" alt="HTML">
+                <!--VideoTxt-->
+                <div class="page-text">
+                    <div class="title-glitch">
+                        <h1 class="title-font">Disk-O<span class="green">kt</span></h1>
+                        <h1 class="title-font">Disk-O<span class="green">kt</span></h1>
+                        <h1 class="title-font">Disk-O<span class="green">kt</span></h1>
                     </div>
-                    <div>
-                        <p>CSS</p>
-                        <img class="tech-img" src="images/icon/css.png" alt="CSS">
+                    <h2>Developer of software.</h2>
+                    <h2>Designer of webs.</h2>
+                    <h2>Daemon in waiting.</h2>
+                    <br>
+                    <h3> Welcome to the disk-O.</h3>
+                </div>
+                <!--About-->
+                <div class="flex-row" id="about">
+                    <!--Left Col-->
+                    <div class="col">
+                        <h4 class="right">.kxxy:kodez</h4>
+                        <div class="content">   
+                            <h5>Who is she?</h5>        
+                            <p>Hi I'm Krystle, a full-stack developer with a 
+                            knack for koding and an eye for design. Creating 
+                            my own .class since '92. 
+                            <br><br>
+                            I used to sling drinks behind a bar, now I serve 
+                            pages and programs. Eager to apply my skills in 
+                            other avenues, saving all progress to the disk-O.
+                        </div>
                     </div>
-                    <div>
-                        <p>JAVASCRIPT</p>
-                        <img class="tech-img" src="images/icon/js.png" alt="JAVASCRIPT">
-                    </div>
-                    <div>
-                        <p>SQL</p>
-                        <img class="tech-img" src="images/icon/sql.png" alt="SQL">
-                    </div>
-                    <div>
-                        <p>PYTHON</p>
-                        <img class="tech-img" src="images/icon/python.png" alt="PYTHON">
-                    </div>
-                    <div>
-                        <p>C#</p>
-                        <img class="tech-img" src="images/icon/csharp.png" alt="C#">
-                    </div>
-                    <div>
-                        <p>.NET</p>
-                        <img class="tech-img" src="images/icon/micro.png" alt=".NET FRAMEWORK">
-                    </div>
-                    <div>
-                        <p>ASP.NET</p>
-                        <img class="tech-img" src="images/icon/asp.png" alt="ASP.NET">
+                    <!--RightCol-->
+                    <div class="col">
+                        <h4 class="purple">[kit-ee:kohds]</h4>
+                        <!--Image-->  
+                        <img src="images/img-headshot.jpg" alt="HeadShot" id="head">
+                        <h5 class="center">{Developer} {Designer} {Dogmom}</h5> 
                     </div>
                 </div>
-            </div>
-        </div>      
-        <!--END TECHSTACK-->    
-
-        <!--GITHUB SECTION-->
-        <div class="container" id="github">
-            <!--LEFT COLUMN-->
-            <div class="column_2">
-                <h4 class="center">disk-O</h4>
-                <div class="center">
-                    <a href="https://github.com/krys-tsuda"><img id="git-img" src="images/github.png" alt=""></a>
+                <!--EndAbout-->
+                <!--TeachStack-->
+                <div class="flex-row">
+                    <div class="col">
+                        <h4 class="center">Tech(no) Stack</h4>
+                        <div class="tech">
+                            <div>
+                                <p class="green">HTML</p>
+                                <img class="tech-img" src="images/icon/icon-html.png" alt="HTML">
+                            </div>
+                            <div>
+                                <p class="green">CSS</p>
+                                <img class="tech-img" src="images/icon/icon-css.png" alt="CSS">
+                            </div>
+                            <div>
+                                <p class="green">JAVASCRIPT</p>
+                                <img class="tech-img" src="images/icon/icon-js.png" alt="JAVASCRIPT">
+                            </div>
+                            <div>
+                                <p class="green">SQL</p>
+                                <img class="tech-img" src="images/icon/icon-sql.png" alt="SQL">
+                            </div>
+                            <div>
+                                <p class="green">PYTHON</p>
+                                <img class="tech-img" src="images/icon/icon-python.png" alt="PYTHON">
+                            </div>
+                            <div>
+                                <p class="green">C#</p>
+                                <img class="tech-img" src="images/icon/icon-csharp.png" alt="C#">
+                            </div>
+                            <div>
+                                <p class="green">.NET</p>
+                                <img class="tech-img" src="images/icon/icon-micro.png" alt=".NET FRAMEWORK">
+                            </div>
+                            <div>
+                                <p class="green">ASP.NET</p>
+                                <img class="tech-img" src="images/icon/icon-asp.png" alt="ASP.NET">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!--RIGHT COLUMN-->
-            <div class="column_1">
-                <h4 class="center">Glitches n Glitter</h4>
-                <div>   
-                    <h5>Developer</h5>               
-                    <p>My focus is on project efficiency and performance. 
-                    Creating responsive applications and functional interfaces. 
-                    Staying current through self education and exploration.</p>     
-                    <h5>Designer</h5>             
-                    <p>As a multimedia artist, I have passion for 'aesthetic' and image. 
-                    Branding is more than an image, it's an idea someone can relate to.
-                    I'm interested in taking ideas and turning them into identities.</p>
+                <!--EndTechStack-->
+                <!--Git-->
+                <div class="flex-row">
+                    <!--LeftColumn-->
+                    <div class="col">   
+                        <h4 class="right purple">Glitches</h4>;
+                        <h5>Developer</h5>               
+                        <p>My focus is on project efficiency and performance. 
+                        I specialize in creating responsive applications and 
+                        functional interfaces. Staying current through self 
+                        education and exploration.</p>     
+                    </div>
+                    <!--RightColumn-->
+                    <div class="col">
+                        <h4>Glitter</h4>
+                        <h5 class="right">Designer</h5>             
+                        <p>As a multimedia artist, my passion for aesthetics 
+                        drives my approach to design. Design is more than just
+                        'image' it's giving life to an idea and making it relateable.</p>  
+                        <br><br>
+                        <p class="green">I excel at turning abstract concepts into visually
+                        striking, tangible products.</p>
+                    </div>
                 </div>
+                <!--EndGit-->
+                <div class="flex-row" id="github">
+                    <div class="col">
+                        <h4 class="center">disk-O</h4>
+                        <div class="center">
+                            <a href="https://github.com/krys-tsuda">
+                                <img id="git-img" src="images/img-github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Contact Form-->
+                <div id="contact">
+                    <button onclick="openForm()" class="popButton">KAT KALLS</button>
+                    <div class="popForm" id="myForm">
+                        <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK-->
+                        <form action="https://formspree.io/f/xyyqyole" method="POST" class="form-container">
+                            <h1 class="form-font">Kontact</h1>
+                            <p>Got ideas? Lets connect!</p>
+                            <label>Name:</label>
+                            <input type="text" placeholder="What's your name?" name="name" required>
+                            <label>Email:</label>
+                            <input type="text" id="email" name="email" placeholder="What's your email?" name="email" required>
+                            <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="What's the word?">
+                                
+                            <button type="submit" class="btn">SEND MEOW</button>
+                            <button type="button" class="close" onclick="closeForm()">CLOSE</button>
+                        </form>
+                    </div>
+                <!--Footer-->
+                <footer>
+                    <p class="foot-font">disk-Okt &copy; 2023 
+                    &nbsp;&nbsp;|&nbsp;&nbsp;    
+                    <a href="https://github.com/krys-tsuda"><img class="icon" src="images/icon/icon-github.png"></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/krystle-tsuda-b3347a278/"><img class="icon" src="images/icon/icon-linkdin.png"></a></p>
+                </footer>
             </div>
         </div>
-        <!--END OF GITHUB SECTION--> 
-            
-        <!--CONTACT FORM-->
-        <div id="contact">
-            <button onclick="openForm()" class="popButton">KAT KALLS</button>
-            <div class="popForm" id="myForm">
-                <!--THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK-->
-                <form action="https://formspree.io/f/xyyqyole" method="POST" class="form_container">
-                    <h1>Kontact</h1>
-                    <p>Got ideas? Lets connect!</p>
-                    <label>Name:</label>
-                    <input type="text" placeholder="What's your name?" name="name" required>
-                    <label>Email:</label>
-                    <input type="text" id="email" name="email" placeholder="What's your email?" name="email" required>
-                    <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="What's the word?">
-                        
-                    <button type="submit" class="btn">SEND MEOW</button>
-                    <button type="button" class="close" onclick="closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div>
-      
-        <!--FOOTER-->
-        <footer>
-            <p class="">
-            disk-Okt &copy; 2023 
-            &nbsp;|    
-            <a href="https://github.com/krys-tsuda"><img class="icon" src="images/icon/giticon.png"></a>
-            &nbsp;
-            <a href="https://www.linkedin.com/in/krystle-tsuda-b3347a278/"><img class="icon" src="images/icon/linkedicon.png"></a>
-            </p>        
-        </footer>
-        <!--END OF FOOTER-->
-        <script src="JS/portfolio.js"></script>
+        <script src="scripts/scripts-main.js"></script>
     </body>
 </html>

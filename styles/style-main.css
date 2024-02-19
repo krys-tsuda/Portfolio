@@ -1,0 +1,601 @@
+
+/*Typography*/
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  float: right;
+}
+
+.green {
+  color: #00ff2a;
+}
+
+.purple {
+  color: #6318d6;
+}
+
+p {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: justify;
+  letter-spacing: .1vw;
+  font-size: 2vw;
+  color: white;
+  font-family: 'Chakra Petch', Courier New, Courier;
+}
+
+h1, h3, h4, h5 {
+  font-family: 'Tektur', Impact;
+}
+
+h2, h3 {
+  margin-left: 22%;
+  line-height: 15px;
+}
+
+h2 {
+  font-family: 'Chakra Petch', Courier New, Courier;
+  font-size: 2.5vw; 
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 3vw;
+  color: white;
+}
+
+h3, h5 {
+  font-size: 2vw;
+  color:#00ff2a;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+h3:hover, h5:hover {
+  color: #73ff00;
+  text-shadow:0 0 5px #73ff00,
+              0 0 25px#73ff00,
+              0 0 50px #73ff00,
+              0 0 200px #73ff00;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  transition: all 0.2s ease-in;
+}
+
+
+/*Title glitch styling*/
+.title-glitch {
+  margin: 10% 0% 10% 20%;
+}
+
+.title-font {
+  color: #fff;
+  font-size: 8vw;
+  /*Create overlap*/
+  margin: 0;
+  line-height: 0;
+  /*Animation*/
+  animation: glitch1 2.5s infinite;
+}
+
+/*style for second glitch text*/
+.title-font:nth-child(2) { 
+  color: #6318d6;
+  animation: glitch2 2.5s infinite;
+}
+
+/*style for third glitch text*/
+.title-font:nth-child(3) {     
+  color: #00ff2a;
+  animation: glitch3 2.5s infinite;
+}
+
+/*Keyframes*/
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+/*General Styling*/
+body, html {
+    height: 100%;
+    margin: 0%;
+    opacity: 1;
+    transition: 3s opacity;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+#bg-vid {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/*Landing Page Text*/
+.page-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    max-width: 100%;
+    height: 100vh;
+    padding: 2vh;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;} 
+}
+
+/*TableStyling*/
+.flex-row {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.col {
+    flex: 1;    
+    width: 50%;
+    padding: 5% 5% 10% 5%;
+}
+
+/*Navbar*/
+navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5x;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/*NAVBAR LINKS*/
+navbar a {
+    float: left;
+    display: block;
+    color: #6318d6;
+    padding: .75vw 1vw;
+    text-decoration: none;
+    font-family: 'Chakra Petch', Courier New, Courier;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+/*MOVE NAV TEXT ANIMATION EFFECT FOR MOVING THE NAVBAR TEXT FROM ABOVE THE VIEW TO THE NAVBAR*/
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/*NAVBAR HOVER EFFECTS*/
+navbar a:hover {
+    color: #00ff2a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*NAVBAR HOME BUTTON*/
+navbar a.active {
+    background-color: black;
+    border: 1px solid #00ff2a;
+}
+
+/**/
+navbar a.active:hover {
+    background-color: black;
+    border: 1px solid #6318d6;
+    color: #00ff2a;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+
+.foot-font {
+  font-family: 'Chakra Petch', Courier New, Courier;
+  font-size: 1.5em;
+}
+
+.foot-font:hover {
+    font-weight: bold;
+}
+
+/*Content*/
+/*Headshot Styling*/
+#head {
+    display: block;
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 5%;
+    --a: 8deg; /* angle of rotation*/
+    aspect-ratio: 1;
+    transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+    mask: 
+    linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+    100% 100%/250% 250%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.alt {
+    --r: 1,1;
+    mask: 
+    linear-gradient(45deg,#000c 40%,#000,#000c 60%)
+    0 100%/250% 250%;
+}
+ 
+/*Headshot hover shimmer styling*/
+#head:hover {
+    --i: -1;
+    mask-position: 0 0;
+}
+
+.alt:hover {
+    mask-position: 100% 0;
+}
+ 
+/*Github icon styling*/
+#git-img {
+    padding-top: 5%;
+    max-width: 100%;
+    height: auto;
+    transition: ease-in .4s;
+}
+
+#git-img:hover {
+    filter: drop-shadow(5px 10px 15px #73ff00);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*TechStack*/
+.tech-container {
+    width: 100%;
+    text-align:center;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.tech div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.tech-img {
+    border-radius: 5px;
+    transition: 0.4s all ease-in;
+}
+
+.tech-img:hover {
+    box-shadow: 0 0 5px #6318d6,
+                0 0 25px #6318d6,
+                0 0 50px #6318d6,
+                0 0 200px #6318d6;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+/*Icon Styling*/
+.icon:hover {
+  box-shadow: 0 0 5px #73ff00,
+              0 0 25px #73ff00,
+              0 0 50px #73ff00,
+              0 0 200px #73ff00;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+}
+/*FormContainer*/
+.form-font {
+  color: #fff;
+  font-size: 8vw;
+  margin-top: 10%;
+}
+
+.popButton {
+    position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
+    bottom: 1.75vw; /* Positions the button slightly up from the bottom of the viewport */
+    right: 1.75vw;
+    width: 25vw;
+    color: #6318d6;
+    border: 2px solid #00ff2a;
+    -webkit-animation: movePopup 5s;
+    animation: movePopup5s;
+}
+
+.popButton:hover {
+    color: #00ff2a;
+    font-weight: bold;
+    border: 2px solid #6318d6;
+}
+
+/*MOVES POP BUTTON OFF THE RIGHT SIDE TO FIXED POSITION*/
+@keyframes movePopup {
+    from {right: -40vw;}
+    to {right: 1.75vw;}
+}
+
+@-webkit-keyframes movePopup {
+    from {right: -40vw;}
+    to {right: 1.75vw;}
+}
+
+/*Contact Form*/
+.popForm {
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
+}
+
+.form-container {
+    max-width: 49vw;
+    padding-top: 15%;
+    padding: 2vw;
+    background-color: black;
+    font-family: 'Chakra Petch', Courier New, Courier;
+    color: #00ff2a;
+}
+
+.form-container input[type=text] {
+    width: calc(100% - 1vw);
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    background-color: black;
+    border: 1px solid #6318d6;
+    color: white;
+    font-size: 1.5vw;
+}
+
+/*HOVER EFFECTS FOR INPUT BOXES*/
+input[type=text]:hover {
+    box-shadow: 10px 5px 5px #00ff2a;
+}
+
+/*SUBMIT BUTTON*/
+button {
+    background-color: black;
+    color: #00ff2a;
+    border: solid 1px #6318d6;
+    font-family: 'Chakra Petch', Courier New, Courier;
+    letter-spacing: .3vw;
+    font-size: 2vw;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+.form-container .btn {
+    margin-bottom: 1vh;
+}
+
+/*CLOSE BUTTON*/
+.close {
+    background-color: #6318d6;
+    color: black;
+    border: none;
+}
+
+/*HOVER EFFECT FOR BUTTONS*/
+.close:hover {
+    background-color: black;
+    border: 2px solid #6318d6;
+    color: #6318d6;
+}
+
+button:hover {
+    border: 2px solid #6318d6;
+    color: #6318d6;
+}
+
+/* PARALLAX SCROLLING PAGE EFFECT
+.flex-row {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.flex-row.active {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+
+
